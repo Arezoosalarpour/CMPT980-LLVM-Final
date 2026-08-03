@@ -1,0 +1,50 @@
+# macOS metadata
+.DS_Store
+._*
+__MACOSX/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Compiled and generated code
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+*.s
+*.asm
+
+# Build directories
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Generated logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+
+# Editor settings
+.idea/
+.vscode/
+
+# Local LLVM source/build trees
+llvm-project/
+llvm-build/
+
+# Generated validation artifacts
+Results/**/raw/
+Results/**/asm/
+Results/**/logs/
+Results/**/baseline/
+Results/**/patched/
