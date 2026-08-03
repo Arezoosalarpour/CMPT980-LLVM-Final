@@ -1,0 +1,75 @@
+{
+  "verification": "final_report_step3c_full_validation",
+  "timestamp_utc": "2026-07-27T19:57:40Z",
+  "llvm_project": "<llvm-project>",
+  "git_head": "6009708b4367171ccdbf4b5905cb6a803753fe18",
+  "git_describe": "llvmorg-17.0.6",
+  "llc": "<llvm-project>/build-x86/bin/llc",
+  "llc_mtime_utc_after_validation": "2026-07-27T12:57:40Z",
+  "filecheck": "<llvm-project>/build-x86/bin/FileCheck",
+  "lit_test": "<llvm-project>/llvm/test/CodeGen/X86/vector-shuffle-combining-avx2.ll",
+  "lit_patch": {
+    "path": "Patches/vector-shuffle-combining-avx2.ll.patch",
+    "sha256": "857ecb9878f6c9b7ee700b8b84eca887105972f3c157cd8bf93ecc639c1bcf4f",
+    "already_applied_exactly": true,
+    "canonical_vs_produced_diff_exit": 0
+  },
+  "filecheck_focused": {
+    "total": 4,
+    "pass": 4,
+    "fail": 0,
+    "configs": ["i686_avx2", "i686_avx512", "x86_64_avx2", "x86_64_avx512"]
+  },
+  "broader_regression": {
+    "files_run": 3,
+    "files_pass": 3,
+    "files_skip": 1,
+    "skip_reason": "avx2-shuffle.ll not present in LLVM 17.0.6 tree",
+    "run_lines_pass": 25,
+    "run_lines_fail": 0
+  },
+  "semantic_verification": {
+    "classification": "PASS",
+    "variants_matched": ["a", "b", "c"]
+  },
+  "71_function_compare": {
+    "method": "independently_generated",
+    "unpatched_asm": "results/final_verification/step3c_full_validation/asm/unpatched.s",
+    "patched_asm": "results/final_verification/step3c_full_validation/asm/patched.s",
+    "transitions_documented": [
+      "T1: patched backend, generate patched.s",
+      "T2: revert backend to HEAD, rebuild llc, generate unpatched.s",
+      "T3: re-apply backend patch, rebuild llc (restore end state)"
+    ],
+    "total_functions_in_module": 76,
+    "original_functions_before_lit_patch": 71,
+    "new_lit_tests_added": 5,
+    "changed_count_total": 4,
+    "unchanged_count_total": 72,
+    "changed_functions": [
+      "combine_and_pshufb",
+      "sparse_identity_or_zero_variant_a",
+      "sparse_identity_or_zero_variant_c",
+      "sparse_one_zero_word_pair_per_lane"
+    ],
+    "intended_pre_existing_change": ["combine_and_pshufb"],
+    "intended_new_test_changes": [
+      "sparse_identity_or_zero_variant_a",
+      "sparse_identity_or_zero_variant_c",
+      "sparse_one_zero_word_pair_per_lane"
+    ],
+    "new_tests_unchanged_as_expected": [
+      "sparse_identity_or_zero_variant_b",
+      "sparse_two_source_cross_lane"
+    ],
+    "unrelated_regressions_among_original_71": 0,
+    "intended_only_changed_strict_metric": false,
+    "note": "step3c_compare.py strict metric counts new lit tests as changed vs unpatched backend; among original 71 functions only combine_and_pshufb changed"
+  },
+  "overall_pass": true,
+  "llvm_tree_state_after_step": {
+    "x86_isel_lowering": "patched (canonical Step 3C backend patch)",
+    "lit_test_file": "patched (canonical Step 3C lit patch applied)",
+    "llc": "patched (rebuilt after T3 restore, mtime 2026-07-27T12:57:40Z)"
+  }
+}

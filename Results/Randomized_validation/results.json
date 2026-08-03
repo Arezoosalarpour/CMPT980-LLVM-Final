@@ -1,0 +1,56 @@
+{
+  "task": "randomized_semantic_validation",
+  "timestamp_utc": "2026-07-28T01:18:12Z",
+  "overall_result": "PASS",
+  "execution_environment": {
+    "host_os": "Darwin 25.5.0",
+    "host_cpu": "Apple M1 Pro",
+    "host_arch": "arm64",
+    "test_binary_arch": "x86_64",
+    "execution_mechanism": "arch -x86_64 (Rosetta 2 translation on Apple Silicon)",
+    "proc_translated_under_arch_x86_64": 1,
+    "proc_translated_native_arm64": 0,
+    "native_x86_64_hardware": false
+  },
+  "patched_build": {
+    "llvm_tree": "<llvm-project>",
+    "git_head": "6009708b4367171ccdbf4b5905cb6a803753fe18",
+    "git_tag": "llvmorg-17.0.6",
+    "llc_path": "<llvm-project>/build-x86/bin/llc",
+    "llc_version": "LLVM 17.0.6 Optimized build",
+    "llc_mtime_utc": "2026-07-27T12:57:40Z",
+    "llc_host_arch": "arm64",
+    "backend_patch": "X86ISelLowering.cpp +281 / -11",
+    "patch_marker_verified": "isInLaneIdentityOrZeroBytePairShuffleMask"
+  },
+  "test_parameters": {
+    "total_input_vectors": 1013,
+    "fixed_pattern_vectors": 7,
+    "boundary_vectors": 6,
+    "random_vectors": 1000,
+    "random_seed": 980202607,
+    "random_prng": "C rand() after srand()",
+    "bytes_per_vector": 32,
+    "variants": ["A", "B", "C"],
+    "total_byte_comparisons": 97248,
+    "mismatches": 0
+  },
+  "variant_results": {
+    "variant_a": {"cases": 1013, "byte_comparisons": 32416, "result": "PASS"},
+    "variant_b": {"cases": 1013, "byte_comparisons": 32416, "result": "PASS"},
+    "variant_c": {"cases": 1013, "byte_comparisons": 32416, "result": "PASS"}
+  },
+  "distinguished_from": [
+    "native_performance_benchmarking",
+    "71_function_regression_comparison",
+    "unpatched_105_mask_investigation"
+  ],
+  "artifacts": {
+    "summary": "RANDOMIZED_SEMANTIC_VALIDATION.md",
+    "harness": "randomized_semantic_test.c",
+    "runner": "run_validation.sh",
+    "verify_log": "logs/verify.log",
+    "commands_log": "logs/commands.log",
+    "environment_log": "logs/environment.txt"
+  }
+}

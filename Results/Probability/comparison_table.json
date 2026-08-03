@@ -1,0 +1,720 @@
+{
+  "by_run": [
+    {
+      "cpu": "haswell",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 4,
+        "instructions": 2,
+        "total_uops": 2,
+        "block_rthroughput": 1.0,
+        "ipc": 0.5,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 1.0,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     1.00    -      -"
+      },
+      "patched": {
+        "total_cycles": 11,
+        "instructions": 1,
+        "total_uops": 2,
+        "block_rthroughput": 1.0,
+        "ipc": 0.09,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 1.0,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -     1.00    -     1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "haswell",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1003,
+        "instructions": 2000,
+        "total_uops": 2000,
+        "block_rthroughput": 1.0,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 1.0,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     1.00    -      -"
+      },
+      "patched": {
+        "total_cycles": 1010,
+        "instructions": 1000,
+        "total_uops": 2000,
+        "block_rthroughput": 1.0,
+        "ipc": 0.99,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 1.0,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -     0.50   0.50    -     1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "skylake",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 4,
+        "instructions": 2,
+        "total_uops": 2,
+        "block_rthroughput": 1.0,
+        "ipc": 0.5,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 1.0,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     1.00    -      -"
+      },
+      "patched": {
+        "total_cycles": 11,
+        "instructions": 1,
+        "total_uops": 2,
+        "block_rthroughput": 1.0,
+        "ipc": 0.09,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 1.0,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -     1.00    -     1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "skylake",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1003,
+        "instructions": 2000,
+        "total_uops": 2000,
+        "block_rthroughput": 1.0,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 1.0,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     1.00    -      -"
+      },
+      "patched": {
+        "total_cycles": 1010,
+        "instructions": 1000,
+        "total_uops": 2000,
+        "block_rthroughput": 1.0,
+        "ipc": 0.99,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 1.0,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -     0.50   0.50    -     1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "icelake-client",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 4,
+        "instructions": 2,
+        "total_uops": 2,
+        "block_rthroughput": 1.0,
+        "ipc": 0.5,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 1.0,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     1.00    -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 11,
+        "instructions": 1,
+        "total_uops": 2,
+        "block_rthroughput": 0.5,
+        "ipc": 0.09,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -     1.00    -     1.00    -      -      -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "icelake-client",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1003,
+        "instructions": 2000,
+        "total_uops": 2000,
+        "block_rthroughput": 1.0,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 1.0,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     1.00    -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 1010,
+        "instructions": 1000,
+        "total_uops": 2000,
+        "block_rthroughput": 0.5,
+        "ipc": 0.99,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -     0.50   0.50   0.50    -     0.50    -      -      -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "alderlake",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 5,
+        "instructions": 2,
+        "total_uops": 2,
+        "block_rthroughput": 0.5,
+        "ipc": 0.4,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.33,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.5,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-     1.00    -      -      -     1.00    -      -      -      -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 12,
+        "instructions": 1,
+        "total_uops": 2,
+        "block_rthroughput": 0.5,
+        "ipc": 0.08,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 9,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -     1.00    -      -      -      -      -     1.00    -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "alderlake",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1004,
+        "instructions": 2000,
+        "total_uops": 2000,
+        "block_rthroughput": 0.5,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.33,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.5,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "0.67   0.67    -      -      -     0.67    -      -      -      -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 3009,
+        "instructions": 1000,
+        "total_uops": 2000,
+        "block_rthroughput": 0.5,
+        "ipc": 0.33,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 9,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-     0.50   0.33   0.33    -     0.50    -      -      -      -      -     0.33    -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 2005
+    },
+    {
+      "cpu": "znver1",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 5,
+        "instructions": 2,
+        "total_uops": 3,
+        "block_rthroughput": 0.8,
+        "ipc": 0.4,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 2,
+            "latency": 1,
+            "rthroughput": 0.67,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -     2.00    -     1.00    -"
+      },
+      "patched": {
+        "total_cycles": 11,
+        "instructions": 1,
+        "total_uops": 2,
+        "block_rthroughput": 1.0,
+        "ipc": 0.09,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 1.0,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-     1.00    -      -      -      -      -      -      -     2.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 6
+    },
+    {
+      "cpu": "znver1",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1004,
+        "instructions": 2000,
+        "total_uops": 3000,
+        "block_rthroughput": 0.8,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 2,
+            "latency": 1,
+            "rthroughput": 0.67,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -     0.50   1.00   0.50   1.00    -"
+      },
+      "patched": {
+        "total_cycles": 1009,
+        "instructions": 1000,
+        "total_uops": 2000,
+        "block_rthroughput": 1.0,
+        "ipc": 0.99,
+        "instructions_detail": [
+          {
+            "uops": 2,
+            "latency": 8,
+            "rthroughput": 1.0,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "0.50   0.50    -      -      -      -      -      -     1.00   1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 5
+    },
+    {
+      "cpu": "znver3",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 4,
+        "instructions": 2,
+        "total_uops": 2,
+        "block_rthroughput": 0.3,
+        "ipc": 0.5,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -      -      -      -     1.00    -      -      -      -      -      -      -      -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 11,
+        "instructions": 1,
+        "total_uops": 1,
+        "block_rthroughput": 0.5,
+        "ipc": 0.09,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 8,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -      -      -     1.00    -      -     1.00    -      -      -     1.00    -      -     1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "znver3",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1003,
+        "instructions": 2000,
+        "total_uops": 2000,
+        "block_rthroughput": 0.3,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -     0.25   0.25   0.25   0.25    -      -      -      -      -      -      -      -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 1010,
+        "instructions": 1000,
+        "total_uops": 1000,
+        "block_rthroughput": 0.5,
+        "ipc": 0.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 8,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -      -     0.50   0.50    -     0.50   0.50    -     0.33   0.33   0.33   0.33   0.33   0.33    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "znver4",
+      "iterations": 1,
+      "baseline": {
+        "total_cycles": 4,
+        "instructions": 2,
+        "total_uops": 2,
+        "block_rthroughput": 0.3,
+        "ipc": 0.5,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -      -      -      -     1.00    -      -      -      -      -      -      -      -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 11,
+        "instructions": 1,
+        "total_uops": 1,
+        "block_rthroughput": 0.5,
+        "ipc": 0.09,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 8,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -      -      -     1.00    -      -     1.00    -      -      -     1.00    -      -     1.00    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    },
+    {
+      "cpu": "znver4",
+      "iterations": 1000,
+      "baseline": {
+        "total_cycles": 1003,
+        "instructions": 2000,
+        "total_uops": 2000,
+        "block_rthroughput": 0.3,
+        "ipc": 1.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 0,
+            "rthroughput": 0.17,
+            "may_load": false,
+            "text": "%xmm1"
+          },
+          {
+            "uops": 1,
+            "latency": 1,
+            "rthroughput": 0.25,
+            "may_load": false,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -     0.25   0.25   0.25   0.25    -      -      -      -      -      -      -      -      -      -      -"
+      },
+      "patched": {
+        "total_cycles": 1010,
+        "instructions": 1000,
+        "total_uops": 1000,
+        "block_rthroughput": 0.5,
+        "ipc": 0.99,
+        "instructions_detail": [
+          {
+            "uops": 1,
+            "latency": 8,
+            "rthroughput": 0.5,
+            "may_load": true,
+            "text": "%ymm0, %ymm0"
+          }
+        ],
+        "resource_pressure_per_iteration": "-      -      -      -      -      -      -      -      -     0.50   0.50    -     0.50   0.50    -     0.33   0.33   0.33   0.33   0.33   0.33    -      -"
+      },
+      "delta_total_cycles_patched_minus_baseline": 7
+    }
+  ],
+  "by_cpu": [
+    {
+      "cpu": "haswell",
+      "delta_total_iter1": 7,
+      "delta_total_iter1000": 7,
+      "estimated_startup_overhead_delta": 7.0,
+      "estimated_steady_state_rate_delta_per_iter": 0.0,
+      "baseline_block_rt_iter1000": 1.0,
+      "patched_block_rt_iter1000": 1.0,
+      "throughput_interpretation": "approximately_equal_steady_state_throughput"
+    },
+    {
+      "cpu": "skylake",
+      "delta_total_iter1": 7,
+      "delta_total_iter1000": 7,
+      "estimated_startup_overhead_delta": 7.0,
+      "estimated_steady_state_rate_delta_per_iter": 0.0,
+      "baseline_block_rt_iter1000": 1.0,
+      "patched_block_rt_iter1000": 1.0,
+      "throughput_interpretation": "approximately_equal_steady_state_throughput"
+    },
+    {
+      "cpu": "icelake-client",
+      "delta_total_iter1": 7,
+      "delta_total_iter1000": 7,
+      "estimated_startup_overhead_delta": 7.0,
+      "estimated_steady_state_rate_delta_per_iter": 0.0,
+      "baseline_block_rt_iter1000": 1.0,
+      "patched_block_rt_iter1000": 0.5,
+      "throughput_interpretation": "approximately_equal_steady_state_throughput"
+    },
+    {
+      "cpu": "alderlake",
+      "delta_total_iter1": 7,
+      "delta_total_iter1000": 2005,
+      "estimated_startup_overhead_delta": 5.0,
+      "estimated_steady_state_rate_delta_per_iter": 2.0,
+      "baseline_block_rt_iter1000": 0.5,
+      "patched_block_rt_iter1000": 0.5,
+      "throughput_interpretation": "worse_steady_state_throughput"
+    },
+    {
+      "cpu": "znver1",
+      "delta_total_iter1": 6,
+      "delta_total_iter1000": 5,
+      "estimated_startup_overhead_delta": 6.0,
+      "estimated_steady_state_rate_delta_per_iter": -0.001,
+      "baseline_block_rt_iter1000": 0.8,
+      "patched_block_rt_iter1000": 1.0,
+      "throughput_interpretation": "approximately_equal_steady_state_throughput"
+    },
+    {
+      "cpu": "znver3",
+      "delta_total_iter1": 7,
+      "delta_total_iter1000": 7,
+      "estimated_startup_overhead_delta": 7.0,
+      "estimated_steady_state_rate_delta_per_iter": 0.0,
+      "baseline_block_rt_iter1000": 0.3,
+      "patched_block_rt_iter1000": 0.5,
+      "throughput_interpretation": "approximately_equal_steady_state_throughput"
+    },
+    {
+      "cpu": "znver4",
+      "delta_total_iter1": 7,
+      "delta_total_iter1000": 7,
+      "estimated_startup_overhead_delta": 7.0,
+      "estimated_steady_state_rate_delta_per_iter": 0.0,
+      "baseline_block_rt_iter1000": 0.3,
+      "patched_block_rt_iter1000": 0.5,
+      "throughput_interpretation": "approximately_equal_steady_state_throughput"
+    }
+  ]
+}
