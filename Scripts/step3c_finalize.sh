@@ -18,7 +18,7 @@ source "$SCRIPT_DIR/common.sh"
 ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 OUT="$ROOT/Results/generated/step3c"
 BASELINE_LIT_ASM="$ROOT/Results/generated/baseline/lit_x64_avx2.s"
-CANONICAL_PATCH="$OUT/X86ISelLowering.patch"
+CANONICAL_PATCH="$ROOT/Patches/X86ISelLowering.patch"
 TESTS="$ROOT/tests"
 COMPARE="$ROOT/Scripts/step3c_compare.py"
 
